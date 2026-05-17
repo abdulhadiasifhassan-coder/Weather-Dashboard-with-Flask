@@ -1,54 +1,62 @@
-h2 {
-    padding-left: 20px;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-
 body {
     background: url("background.png");
-}
-
-.weatherText {
     font-family: 'Lato', 'sans-serif';
-    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-
-#weatherForm {
+.titleName {
+    display: flex;
+    justify-content: center;
     padding: 20px;
 }
-
+.titleName h1 {
+    font-size: 30px;
+    background: linear-gradient(45deg, #87adfe, #ff77cd);
+    border-radius: 6px;
+    padding: 20px 30px;
+    box-shadow: 3px 8px 15px rgba(94, 28, 68, 0.15);
+    text-align: center;
+}
+#weatherForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    font-size: 24px;
+}
+#weatherInput {
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 400px;
+}
 #weatherSubmit {
     color: white;
     font-family: 'Lato', 'sans-serif';
     background-color: #61b15a;
-    padding: 5px 20px;
+    padding: 10px 30px;
     border-radius: 5px;
-    margin-top: 20px;
+    font-size: 20px;
+    border: none;
 }
-
 #weatherSubmit:hover {
     cursor: pointer;
     color: black;
     transition: 1s;
 }
-
 footer {
-    text-align: left;
-    padding: 3px;
+    text-align: center;
+    padding: 10px;
     border-radius: 5px;
     background-color: DarkSalmon;
-}
-
-.titleName h1{
-    display: inline-block;
-    font-size: 30px;
-    background: linear-gradient(45deg, #87adfe, #ff77cd);
-    border-radius: 6px;
-    padding: 20px 30px;
-    alignment: center;
-    box-sizing: border-box;
-    box-shadow: 3px 8px 15px rgba(94, 28, 68, 0.15);
-}
-
-.titleName {
-    padding-left: 12px;
-    padding-top: 5px;
+    margin-top: auto;
 }

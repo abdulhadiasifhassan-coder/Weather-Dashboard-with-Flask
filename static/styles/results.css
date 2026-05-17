@@ -21,6 +21,8 @@
     transition: 1s;
     position: relative;
     overflow: hidden;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .btn:hover {

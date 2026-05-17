@@ -1,5 +1,11 @@
 # 🌤️ Weather Dashboard with Flask
 
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![PythonAnywhere](https://img.shields.io/badge/Hosted%20on-PythonAnywhere-1D9FD7?style=flat)
+
 A web app that displays real-time weather data for any city, built with Python and Flask and hosted on PythonAnywhere.
 
 🌐 **Live Site:** [abdulhadicoder.pythonanywhere.com](https://abdulhadicoder.pythonanywhere.com)
@@ -18,14 +24,14 @@ A web app that displays real-time weather data for any city, built with Python a
 - **OpenWeatherMap API** – weather data
 
 ## 📁 Project Structure
+```
 Weather-Dashboard-with-Flask/
 │
 ├── static/          # CSS styles
 ├── templates/       # HTML templates
 ├── app.py           # Main Flask application
-├── requirements.txt # Python dependencies
-└── Procfile         # Deployment config
-
+└── requirements.txt # Python dependencies
+```
 ## 🚀 Run Locally
 
 ```bash

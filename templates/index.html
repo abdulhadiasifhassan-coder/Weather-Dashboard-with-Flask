@@ -6,30 +6,19 @@
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/index.css') }}">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-        <script>
-            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-            const firebaseConfig = {
-                "apiKey": "AIzaSyCtzofTANcV9AbGjoVKws_USMStVxsHqTk",
-                "authDomain": "weather-dashboard-a0784.firebaseapp.com",
-                "projectId": "weather-dashboard-a0784",
-                "storageBucket": "weather-dashboard-a0784.appspot.com",
-                "messagingSenderId": "527989146651",
-                "appId": "1:527989146651:web:9d564ff9e493a03ade64be",
-                "measurementId": "G-JW5G0N6L25"
-            };
-        </script>
     </head>
     <body>
         <a class="titleName" href="/static"><h1 class="titleName">Weather Dashboard</h1></a>
         <form class="weatherText" id="weatherForm" action="{{ url_for('render_results') }}" method = "post">
-            Location City Name: <input class="weatherText" id="weatherInput" type="text" name="zipCode"><br>
+            Location City Name: <input class="weatherText" id="weatherInput" type="text" name="city"><br>
+            {% if error %}
+                <p style="color: red;">{{ error }}</p>
+            {% endif %}
         <input class="weatherText" id="weatherSubmit" type="submit" value="Submit">
         </form>
         <footer>
-            <p>Copyright © 2024 Abdul Hadi Asif Hassan<br>
-            <a href="tel:+97474001947">📞Contact Me</a><br>
-            <a href="https://api.whatsapp.com/send?phone=97474001947">💬WhatsApp Me</a><br>
-            <a href="mailto:abdulhadiasifhassan@gmail.com">📩Mail Me</a></p>
+            <p>Copyright © 2026 Abdul Hadi Asif Hassan<br>
+            <a href="https://github.com/abdulhadiasifhassan-coder">GitHub Profile</a></p>
         </footer>
     </body>
 </html>

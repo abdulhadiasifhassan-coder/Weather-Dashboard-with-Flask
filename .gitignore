@@ -67,3 +67,12 @@ node_modules/
 
 # api_key
 config.ini
+
+# failed firebase attempts
+.firebase/
+.firebaserc
+firebase.json
+
+# venv folder
+venv/
+templates/public/venv/
